@@ -1,0 +1,10 @@
+services:
+  db:
+    build: ./pg_audit
+    command: bash
+    tty: true
+    environment:
+      PATH: "/bin:/usr/bin:/usr/local/bin"
+    # ports:
+    #   - 2222:22
+      # - 8080:5432
